@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/sqljdbc42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/smtp-0.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/jakarta.servlet.jsp.jstl-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/activation-jaf1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/web/WEB-INF/classes/lib/mysql-connector-j-8.0.32.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../lib/jakarta.servlet.jsp.jstl-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

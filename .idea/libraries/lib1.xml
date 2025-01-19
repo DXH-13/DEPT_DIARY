@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/mysql-connector-j-8.0.32.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/smtp-0.1.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jakarta.servlet.jsp.jstl-api-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/activation-jaf1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/sqljdbc42.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/jakarta.servlet.jsp.jstl-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/java/lib/javax.mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

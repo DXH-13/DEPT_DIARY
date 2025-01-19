@@ -1,0 +1,313 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14/02/2024, 9:31:09 PM
+    Author     : ussat
+*/
+
+/* Modal base styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Adjust the modal-content width and centering */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Adjust width to take up more screen space */
+    margin: 2% auto; /* Reduce the top margin to bring the modal up */
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close {
+    color: black;
+}
+
+.open-modal-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Toggle button styles */
+.toggle-buttons {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons .btn {
+    background-color: #f0f8ff;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-buttons input[type="radio"] {
+    display: none; /* Hide radio button */
+}
+
+.toggle-buttons input[type="radio"]:checked + .btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Form field styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #83b3e3 !important;
+}
+#debtBill {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 12, 46, 0.15);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    /* Remove width limit to allow the form to fill modal-content */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Tương tự như các input khác, áp dụng cho tất cả các loại input trong .form-group */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="datetime-local"],
+.form-group input[type="date"], /* Thêm kiểu input mới này */
+.form-group textarea,
+.form-control {
+    width: calc(100% - 20px); /* Đảm bảo input chiếm toàn bộ chiều rộng trừ padding */
+    padding: 10px; /* Đủ không gian cho văn bản */
+    margin-bottom: 10px; /* Khoảng cách giữa các trường */
+    border: 1px solid #ddd; /* Đường viền mảnh và nhẹ */
+    border-radius: 4px; /* Bo tròn góc */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến tổng chiều rộng */
+}
+
+/* Điều chỉnh cho các thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+    .form-group input[type="text"],
+    .form-group input[type="number"],
+    .form-group input[type="datetime-local"],
+    .form-group input[type="date"], /* Đảm bảo kiểu mới cũng được điều chỉnh */
+    .form-group textarea {
+        width: calc(100% - 20px); /* Điều chỉnh chiều rộng cho màn hình nhỏ */
+    }
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.form-actions button:first-child {
+    background-color: #6c757d;
+}
+.custom-file-input {
+    color: #28a745;
+}
+.text-danger {
+    color: #dc3545;
+}
+
+#amountInWords {
+    color: #555;
+    margin-top: 5px;
+
+}
+/* Custom file upload button style */
+.custom-file-upload {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 2px dashed #d6d6d6;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-file-upload:hover {
+    background-color: #e9e9e9;
+}
+
+.custom-file-upload i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #555;
+}
+
+.custom-file-input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.custom-file-input {
+    display: none; /* Ẩn input file gốc */
+}
+
+.fa-plus-circle {
+    margin-right: 5px;
+}
+
+/* CSS từ phần trước */
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.modal-header, .modal-footer {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+.modal-title {
+    color: #333;
+}
+.btn-primary, .btn-secondary {
+    color: #fff;
+}
+.btn-primary:hover, .btn-secondary:hover {
+    opacity: 0.85;
+}
+#agreeButton {
+    display: block; /* Block level để có thể áp dụng margin tự động */
+    width: auto; /* Width tự động để nút nhỏ lại */
+    margin: 0px auto; /* Top và bottom margin 20px, auto để căn giữa */
+    padding: 10px 20px; /* Padding để nút không quá nhỏ */
+    background-color: #007bff; /* Màu nền của nút */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    cursor: pointer; /* Hiệu ứng con trỏ khi di chuột qua */
+    border-radius: 5px; /* Bo tròn góc */
+    font-size: 16px; /* Cỡ chữ */
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    border-radius: 0.25rem;
+    height: auto;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: none; /* Loại bỏ đường viền dưới */
+}
+
+.modal-footer {
+    padding: 15px;
+    border-top: none; /* Loại bỏ đường viền trên */
+}
+
+/* Modal thông báo thành công */
+#successModal .modal-content {
+    background-color: #ffffff; /* Màu nền trắng cho thông báo thành công */
+    color: #333; /* Màu chữ tối cho thông báo thành công */
+    border: none; /* Không viền cho modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ nhẹ */
+}
+
+#successModal .modal-header {
+    background-color: #ffffff; /* Màu nền trắng cho header của modal thông báo thành công */
+    border-bottom: 1px solid #e5e5e5; /* Một đường viền mỏng ở phía dưới header, nếu cần */
+}
+
+#successModal .modal-footer {
+    background-color: #ffffff; /* Màu nền trắng cho footer của modal thông báo thành công */
+    border-top: 1px solid #e5e5e5; /* Một đường viền mỏng ở phía trên footer, nếu cần */
+}
+
+#successModal .close-button {
+    color: #333; /* Màu của nút đóng tối */
+}
+
+#successModal .close-button:hover {
+    color: #000; /* Màu của nút đóng khi hover là đen */
+}
+
+/* Nút trong modal */
+#successModal button {
+    background-color: #007bff; /* Màu nền cho nút 'Đóng' trong modal thành công */
+    border-color: #007bff; /* Màu viền cho nút */
+    color: white; /* Màu chữ cho nút */
+}
+
+#successModal button:hover {
+    background-color: #0056b3; /* Màu nền khi hover cho nút 'Đóng' trong modal thành công */
+    border-color: #004085; /* Màu viền khi hover cho nút */
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    max-width: 30px;
+}

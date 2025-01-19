@@ -1,0 +1,79 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 14, 2024, 12:20:16 AM
+    Author     : khail
+*/
+body {
+    background-color: #f5f5f5;
+    font-family:sans-serif;
+}
+
+.token-form {
+    margin: 0 auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    max-width:450px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid rgba(17, 12, 46, 0.15);
+    border-radius: 10px;
+}
+
+.token-title {
+    color: #111;
+    text-align:center;
+    font-family: sans-serif;
+    font-size:30px;
+    font-weight:600;
+    margin:20px 0px 30px;
+}
+
+.token-form .token-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size:15px;
+}
+.token-input input:focus {
+  color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+#token-btn {
+    margin-top:5px;
+    bottom: 10px;
+    right: 10px;
+    padding:12px 20px;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:#4c81ff;
+    border-radius: 4px;
+    color:#fff;
+    transition: .3s;
+    cursor:pointer;
+}
+#token-btn:hover{
+    opacity: .8;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
